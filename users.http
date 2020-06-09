@@ -1,0 +1,23 @@
+GET http://localhost:4545/users HTTP/1.1
+
+###
+
+POST http://localhost:4545/users HTTP/1.1
+Content-Type: application/json
+
+{
+  "pseudo": "Tomas"
+}
+
+###
+
+PUT http://localhost:4545/users/2 HTTP/1.1
+Content-Type: application/json
+
+{
+  "pseudo" : "Jane"
+}
+
+###
+
+GET http://localhost:4545/users/2 HTTP/1.1
